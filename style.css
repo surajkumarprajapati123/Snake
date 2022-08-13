@@ -1,0 +1,79 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: linear-gradient(rgb(95, 225, 83),rgb(77, 149, 32),rgb(255, 255, 70),rgb(84, 179, 84));
+    
+}
+
+.body
+{
+    text-align: center;
+    display: flex;
+    min-height: 10vh;
+
+}
+#scoreBox
+{
+    position: absolute;
+    top: 9px;
+    right: 200px;
+    font-size: 34px;
+}
+#highscorebox
+{
+    position: absolute;
+    top: 8%;
+    right: 200px;
+    font-size: 34px;
+}
+#board
+{
+   background-image: linear-gradient(rgb(55, 230, 93),rgb(105, 215, 127));
+    width: 90vmin;
+    height: 92vmin;
+  margin-left: 25%;
+  display: grid;
+  grid-template-rows: repeat(18,1fr);
+  grid-template-columns: repeat(18,1fr);
+  border: 2px solid rgb(170, 170, 42);
+
+}
+.head
+{
+    background-color: red;
+    border: 2px solid purple;
+    transform: scale(1.5);
+    border-radius: 12px;
+
+
+}
+.snack
+{
+    background-color: rgb(219, 26, 197);
+    border: .35vmin solid rgb(211, 46, 46);
+    border-radius: 15px;
+    animation: foode 1s infinite;
+  
+}
+.food
+{
+    
+    background: linear-gradient(red,yellow);
+    border-radius: 10px;
+    border: 5px solid purple;
+    
+}
+@keyframes foode {
+    10%{color: rgb(228, 32, 134);}
+    30%{color: rgb(213, 229, 43);}
+    50%{
+        color: rgb(57, 32, 220);
+    }
+    70%{
+        color: rgb(152, 214, 20);
+    }
+    
+}
